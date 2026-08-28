@@ -48,14 +48,14 @@
           <label for="telefone">Telefone:</label>
           <br />
 
-          <input type="tel" id="telefone" name="telefone" />
+          <input type="tel" id="telefone" name="telefone" required />
 
           <br /><br />
 
           <label for="nascimento">Data de nascimento:</label>
           <br />
 
-          <input type="date" id="nascimento" name="nascimento" />
+          <input type="date" id="nascimento" name="nascimento" required />
           <br /><br />
 
           <label for="cpf">CPF:</label>
@@ -85,7 +85,7 @@
 
           <label for="plano">Escolha um plano:</label>
 
-          <select id="plano" name="plano">
+          <select id="plano" name="plano" required></select>
             <option value="" selected disabled>Selecione</option>
             <option value="mensal">Mensal</option>
             <option value="trimestral">Trimestral</option>
@@ -97,7 +97,8 @@
 
           <label for="modalidade">Modalidade principal:</label>
 
-          <select id="modalidade" name="modalidade">
+          <select id="modalidade" name="modalidade" required></select>
+          </select>
             <option value="" selected disabled>Selecione</option>
             <option value="musculacao">Musculação</option>
             <option value="funcional">Funcional</option>
@@ -109,7 +110,7 @@
 
           <p>Horário de preferência:</p>
 
-          <input type="radio" id="manha" name="horario" value="manha" />
+          <input type="radio" id="manha" name="horario" value="manha" required />
 
           <label for="manha">Manhã</label>
 
