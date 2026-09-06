@@ -87,3 +87,22 @@ ul {
 li {
     margin-bottom: 5px;
 }
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
