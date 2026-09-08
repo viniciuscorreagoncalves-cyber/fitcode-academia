@@ -1,124 +1,143 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+/* Importa a fonte Montserrat do Google Fonts */
+@import url("https://googleapis.com");
 
+/* CONFIGURAÇÃO DE CORES E FONTES (Variáveis) */
+:root {
+    --cor-primaria: #ff6600;       /* Laranja do menu */
+    --cor-secundaria: #9acd32;     /* Verde-lima */
+    --cor-escura: #111111;         /* Preto do cabeçalho */
+    --cor-fundo: #bdbbbb;          /* Cinza do fundo da página */
+    --cor-texto: #333333;          /* Cinza escuro dos textos */
+    --cor-branca: #ffffff;         /* Branco */
+    --fonte-principal: "Montserrat", sans-serif; /* Fonte do site */
+    --cor-section: #efe1c6;        /* Bege dos blocos de conteúdo */
+}
 
+/* CONFIGURAÇÕES DO CORPO DA PÁGINA */
 body {
-    font-family: var(--fonte-principal);
-    margin: 0;
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    font-family: var(--fonte-principal); /* Aplica a fonte Montserrat */
+    margin: 0;                           /* Remove as bordas padrão da tela */
+    background-color: var(--cor-fundo);  /* Cor de fundo cinza */
+    color: var(--cor-texto);             /* Cor do texto do site */
 }
 
+/* CABEÇALHO (Topo do site) */
 header {
-    background-color: var(--cor-escura);
-    color: var(--cor-branca);
-    text-align: center;
-    padding: 20px;
+    background-color: var(--cor-escura); /* Fundo preto */
+    color: var(--cor-branca);            /* Texto branco */
+    text-align: center;                  /* Centraliza o título */
+    padding: 20px;                       /* Espaço interno para não ficar apertado */
 }
 
+/* MENU DE NAVEGAÇÃO */
 nav {
-    background-color: var(--cor-primaria);
-    text-align: center;
-    padding: 15px;
+    background-color: var(--cor-primaria); /* Fundo laranja */
+    text-align: center;                    /* Centraliza os links */
+    padding: 15px;                         /* Altura do menu */
 }
 
+/* LINKS DO MENU */
 nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
+    color: white;             /* Texto branco */
+    text-decoration: none;    /* Remove o sublinhado dos links */
+    margin: 10px;             /* Espaço entre um link e outro */
 }
 
+/* CONTEÚDO PRINCIPAL (Caixa que segura o meio do site) */
 main {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
+    width: 90%;               /* Largura do site em telas normais */
+    max-width: 1000px;        /* Largura máxima para não esticar demais */
+    margin: 20px auto;        /* Centraliza a caixa na tela */
 }
 
+/* SEÇÕES (Blocos de conteúdo) */
 section {
-    background-color: var(--cor-section);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    background-color: var(--cor-section); /* Fundo bege */
+    padding: 20px;                         /* Espaço interno para o texto não colar na bordas */
+    margin-bottom: 20px;                   /* Espaço entre um bloco e outro */
+    border-radius: 20px;                   /* Cantos arredondados */
 }
 
+/* RODAPÉ (Fim da página) */
 footer {
-    background-color: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
+    background-color: #222; /* Fundo cinza escuro */
+    color: white;           /* Texto branco */
+    text-align: center;     /* Centraliza o texto */
+    padding: 15px;          /* Espaço interno */
 }
+
+/* TEXTOS E TÍTULOS */
 h1 {
-    font-size: 32px;
+    font-size: 32px; /* Tamanho do título principal */
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #333;
-    padding-bottom: 5px;
+    color: #333;                       /* Cor do título */
+    border-bottom: 2px solid #333;     /* Linha decorativa embaixo do título */
+    padding-bottom: 5px;               /* Espaço entre o texto e a linha */
 }
 
 h3 {
-    color: #444;
+    color: #444; /* Cor do subtítulo */
 }
+
+/* IMAGENS */
 img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Faz a imagem se ajustar ao tamanho da tela */
+    height: auto;    /* Mantém a imagem na proporção correta */
 }
 
+/* Imagens que estão dentro de artigos */
 article img {
-    width: 200px;
-    border-radius: 10px;
+    width: 200px;         /* Força a imagem a ter 200px de largura */
+    border-radius: 10px;  /* Cantos levemente arredondados */
 }
+
+/* TABELAS */
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%;             /* Tabela ocupa toda a largura disponível */
+    border-collapse: collapse; /* Junta as bordas para virar uma linha única */
 }
 
-th,
-td {
-    border: 1px solid #999;
-    padding: 10px;
-    text-align: center;
+/* Células da tabela */
+th, td {
+    border: 1px solid #999; /* Linha cinza ao redor das células */
+    padding: 10px;          /* Espaço interno para o texto respirar */
+    text-align: center;     /* Centraliza o texto na tabela */
 }
 
+/* Títulos da tabela (Primeira linha) */
 th {
-    background-color: #333;
-    color: white;
+    background-color: #333; /* Fundo escuro */
+    color: white;           /* Texto branco */
 }
+
+/* LISTAS */
 ul {
-    line-height: 1.8;
+    line-height: 1.8; /* Aumenta o espaço entre as linhas da lista */
 }
 
 li {
-    margin-bottom: 5px;
+    margin-bottom: 5px; /* Espaço entre um item e outro da lista */
 }
-@media (max-width: 600px) {
 
+/* ADAPTAÇÃO PARA CELULAR (Telas menores que 600px) */
+@media (max-width: 600px) {
     header h1 {
-        font-size: 24px;
+        font-size: 24px; /* Diminui o título no celular */
     }
 
     nav a {
-        display: block;
+        display: block;  /* Coloca os links do menu um embaixo do outro */
         margin: 8px;
     }
 
     main {
-        width: 95%;
+        width: 95%;      /* Usa melhor o espaço lateral no celular */
     }
 
     table {
-        font-size: 12px;
+        font-size: 12px; /* Diminui a letra da tabela para caber na tela */
     }
-}
-
-:root {
-    --cor-primaria: #ff6600;
-    --cor-secundaria: #9acd32;
-    --cor-escura: #111111;
-    --cor-fundo: #bdbbbb;
-    --cor-texto: #333333;
-    --cor-branca: #ffffff;
-    --fonte-principal: "Montserrat", sans-serif;
-    --cor-section: #efe1c6;
-}
+} /* NOTA DE DESENVOLVIMENTO: Foi utilizada uma pequena assistência de IA para organizar a estrutura e padronizar o codigo em CSS. */
 
