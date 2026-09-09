@@ -75,10 +75,10 @@ section {
 
 /* RODAPÉ (Fim da página) */
 footer {
-    background-color: #222; /* Fundo cinza escuro */
-    color: white;           /* Texto branco */
-    text-align: center;     /* Centraliza o texto */
-    padding: 15px;          /* Espaço interno */
+    background-color: #151515;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
 
 /* TEXTOS E TÍTULOS */
