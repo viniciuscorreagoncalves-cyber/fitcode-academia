@@ -1,5 +1,6 @@
 /* Importa a fonte Montserrat do Google Fonts */
-@import url("https://googleapis.com");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 
 /* CONFIGURAÇÃO DE CORES E FONTES (Variáveis) */
 :root {
@@ -23,11 +24,19 @@ body {
 
 /* CABEÇALHO (Topo do site) */
 header {
-    background-color: var(--cor-escura); /* Fundo preto */
-    color: var(--cor-branca);            /* Texto branco */
-    text-align: center;                  /* Centraliza o título */
-    padding: 20px;                       /* Espaço interno para não ficar apertado */
+    background-color: var(--cor-escura);
+    color: var(--cor-branca);
+    text-align: center;
+    padding: 20px;
+    /*posicionamento fixo para o cabeçalho, mantendo-o visível ao rolar a página*/
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 
 /* MENU DE NAVEGAÇÃO */
 nav {
@@ -42,12 +51,18 @@ nav a {
     text-decoration: none;    /* Remove o sublinhado dos links */
     margin: 10px;             /* Espaço entre um link e outro */
 }
+    /* EFEITO AO PASSAR O MOUSE */
+    nav a:hover {
+    color: blue (red);
+}
+
 
 /* CONTEÚDO PRINCIPAL (Caixa que segura o meio do site) */
 main {
     width: 90%;               /* Largura do site em telas normais */
     max-width: 1000px;        /* Largura máxima para não esticar demais */
     margin: 20px auto;        /* Centraliza a caixa na tela */
+    padding-top: 100px;
 }
 
 /* SEÇÕES (Blocos de conteúdo) */
@@ -76,6 +91,11 @@ h2 {
     border-bottom: 2px solid #333;     /* Linha decorativa embaixo do título */
     padding-bottom: 5px;               /* Espaço entre o texto e a linha */
 }
+h2::before {
+    content: "▸ ";
+    color: var(--cor-primaria);
+}
+
 
 h3 {
     color: #444; /* Cor do subtítulo */
@@ -120,6 +140,11 @@ ul {
 li {
     margin-bottom: 5px; /* Espaço entre um item e outro da lista */
 }
+    li:nth-child(even) {
+    background-color: purple; /* Cor de fundo para itens pares da lista */
+
+}
+
 
 /* ADAPTAÇÃO PARA CELULAR (Telas menores que 600px) */
 @media (max-width: 600px) {
