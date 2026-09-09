@@ -55,7 +55,7 @@ main {
     width: 1200px;               /* Largura do site em telas normais */
     max-width: 10000px;        /* Largura máxima para não esticar demais */
     margin: 20px auto;        /* Centraliza a caixa na tela */
-    padding-top: 50px;
+    padding-top: 38px;
 }
 
 /* SEÇÕES (Blocos de conteúdo) */
@@ -97,7 +97,8 @@ h3 {
 /* IMAGENS */
 img {
     max-width: 100%; /* Faz a imagem se ajustar ao tamanho da tela */
-    height: auto;    /* Mantém a imagem na proporção correta */
+    height: auto;     /* Mantém a imagem na proporção correta */
+    border-radius: 10px;   
 }
 
 /* Imagens que estão dentro de artigos */
