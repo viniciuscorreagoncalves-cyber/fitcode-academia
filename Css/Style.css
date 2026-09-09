@@ -4,14 +4,14 @@
 
 /* CONFIGURAÇÃO DE CORES E FONTES (Variáveis) */
 :root {
-    --cor-primaria: #ff6600;       /* Laranja do menu */
-    --cor-secundaria: #9acd32;     /* Verde-lima */
-    --cor-escura: #111111;         /* Preto do cabeçalho */
-    --cor-fundo: #bdbbbb;          /* Cinza do fundo da página */
-    --cor-texto: #333333;          /* Cinza escuro dos textos */
-    --cor-branca: #ffffff;         /* Branco */
-    --fonte-principal: "Montserrat", sans-serif; /* Fonte do site */
-    --cor-section: #efe1c6;        /* Bege dos blocos de conteúdo */
+    --cor-primaria: #FF6B35;       /* Laranja moderno */
+    --cor-secundaria: #00B4D8;     /* Azul/ciano */
+    --cor-escura: #151515;         /* Preto grafite */
+    --cor-fundo: #E9ECEF;          /* Cinza claro */
+    --cor-texto: #212529;          /* Cinza escuro */
+    --cor-branca: #FFFFFF;         /* Branco */
+    --fonte-principal: "Montserrat", sans-serif;
+    --cor-section: #FFFFFF;        /* Branco para os blocos */
 }
 
 /* CONFIGURAÇÕES DO CORPO DA PÁGINA */
@@ -141,7 +141,7 @@ li {
     margin-bottom: 5px; /* Espaço entre um item e outro da lista */
 }
     li:nth-child(even) {
-    background-color: purple; /* Cor de fundo para itens pares da lista */
+    background-color: var(--cor-secundaria); /* Cor de fundo para itens pares da lista */
 
 }
 
