@@ -27,14 +27,7 @@ header {
     background-color: var(--cor-escura);
     color: var(--cor-branca);
     text-align: center;
-    padding: 20px;
-    /*posicionamento fixo para o cabeçalho, mantendo-o visível ao rolar a página*/
-
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
+    padding: 50px;
 }
 
 
@@ -42,7 +35,7 @@ header {
 nav {
     background-color: var(--cor-primaria); /* Fundo laranja */
     text-align: center;                    /* Centraliza os links */
-    padding: 15px;                         /* Altura do menu */
+    padding: 15px;    /* Altura do menu */
 }
 
 /* LINKS DO MENU */
@@ -59,10 +52,10 @@ nav a {
 
 /* CONTEÚDO PRINCIPAL (Caixa que segura o meio do site) */
 main {
-    width: 90%;               /* Largura do site em telas normais */
-    max-width: 1000px;        /* Largura máxima para não esticar demais */
+    width: 1200px;               /* Largura do site em telas normais */
+    max-width: 10000px;        /* Largura máxima para não esticar demais */
     margin: 20px auto;        /* Centraliza a caixa na tela */
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 /* SEÇÕES (Blocos de conteúdo) */
