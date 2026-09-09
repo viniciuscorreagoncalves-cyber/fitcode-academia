@@ -52,8 +52,8 @@ nav a {
     margin: 10px;             /* Espaço entre um link e outro */
 }
     /* EFEITO AO PASSAR O MOUSE */
-    nav a:hover {
-    color: blue (red);
+  nav a:hover {
+    color: var(--cor-secundaria);
 }
 
 
@@ -140,8 +140,9 @@ ul {
 li {
     margin-bottom: 5px; /* Espaço entre um item e outro da lista */
 }
-    li:nth-child(even) {
-    background-color: var(--cor-secundaria); /* Cor de fundo para itens pares da lista */
+   li:nth-child(even) {
+    background-color: #F1F3F5;
+}
 
 }
 
