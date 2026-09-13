@@ -317,3 +317,8 @@ button:hover {
 .pagina-modalidades section p {
     margin-bottom: 10px;
 }
+/* ===== DESTAQUE VISUAL DOS CARDS ===== */
+
+.pagina-modalidades section {
+    border-top: 4px solid var(--cor-primaria);
+}
