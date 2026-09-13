@@ -231,3 +231,80 @@ button:hover {
         width: 100%;
     }
 }
+/* ===== ESTILIZAÇÃO DA PÁGINA DE MODALIDADES ===== */
+
+.pagina-modalidades main {
+    width: 90%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.pagina-modalidades h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.pagina-modalidades section {
+    margin-bottom: 0;
+    padding: 25px;
+}
+/* ===== MELHORIAS VISUAIS DOS CARDS ===== */
+
+.pagina-modalidades section {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pagina-modalidades section h3 {
+    text-align: center;
+    color: var(--cor-primaria);
+    font-size: 22px;
+}
+
+.pagina-modalidades section img {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    margin: 15px auto;
+}
+
+.pagina-modalidades section p {
+    line-height: 1.6;
+}
+/* ===== RESPONSIVIDADE E EFEITOS ===== */
+
+.pagina-modalidades section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.18);
+}
+
+.pagina-modalidades section img {
+    transition: transform 0.3s ease;
+}
+
+.pagina-modalidades section:hover img {
+    transform: scale(1.03);
+}
+
+@media (max-width: 700px) {
+
+    .pagina-modalidades main {
+        width: 92%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pagina-modalidades h2 {
+        font-size: 26px;
+    }
+
+    .pagina-modalidades section {
+        padding: 20px;
+    }
+
+    .pagina-modalidades section h3 {
+        font-size: 20px;
+    }
+}
