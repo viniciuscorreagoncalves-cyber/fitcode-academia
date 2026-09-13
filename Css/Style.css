@@ -308,3 +308,12 @@ button:hover {
         font-size: 20px;
     }
 }
+/* ===== DESTAQUE DAS INFORMAÇÕES DAS MODALIDADES ===== */
+
+.pagina-modalidades section strong {
+    color: var(--cor-primaria);
+}
+
+.pagina-modalidades section p {
+    margin-bottom: 10px;
+}
