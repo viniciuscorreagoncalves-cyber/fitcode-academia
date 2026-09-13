@@ -34,8 +34,12 @@ header {
     color: var(--cor-branca);
     text-align: center;
     padding: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
-
 
 /* MENU DE NAVEGAÇÃO */
 nav {
@@ -58,20 +62,27 @@ nav a {
 
 /* CONTEÚDO PRINCIPAL (Caixa que segura o meio do site) */
 main {
-    width: 1200px;               /* Largura do site em telas normais */
-    max-width: 10000px;        /* Largura máxima para não esticar demais */
-    margin: 20px auto;        /* Centraliza a caixa na tela */
-    padding-top: 38px;
+    width: 1200px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 120px 20px 20px;
 }
 
 /* SEÇÕES (Blocos de conteúdo) */
 section {
-    background-color: var(--cor-section); /* Fundo bege */
-    padding: 20px;                         /* Espaço interno para o texto não colar na bordas */
-    margin-bottom: 20px;                   /* Espaço entre um bloco e outro */
-    border-radius: 20px;                   /* Cantos arredondados */
+    background-color: var(--cor-section);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
+section:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
 /* RODAPÉ (Fim da página) */
 footer {
     background-color: #151515;
@@ -164,4 +175,38 @@ li {
         font-size: 12px; /* Diminui a letra da tabela para caber na tela */
     }
 } /* NOTA DE DESENVOLVIMENTO: Foi utilizada uma pequena assistência de IA para organizar a estrutura e padronizar o codigo em CSS. */
+/* ESTILO DOS CAMPOS DO FORMULÁRIO */
 
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: var(--fonte-principal);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+}
+
+button {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
